@@ -11,6 +11,7 @@ services:
       REDMINE_DB_MYSQL: db
       REDMINE_DB_PASSWORD: example
       REDMINE_SECRET_KEY_BASE: supersecretkey
+      FXA_REQUIRED = false
     volumes:
       - ./:/mnt/host
 
