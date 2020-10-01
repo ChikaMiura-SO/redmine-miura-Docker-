@@ -8,7 +8,7 @@
 `
 $ sudo docker cp redmine_agile-1_5_4-l <コンテナID>:/etc/redmine_agile-1_5_4-l
 `   
-2.コンテナの中に入ります。
+2.コンテナの中に入ります。  
 `
 $ sudo docker exec -i -t コンテナ名またはコンテナID bash
 `   
@@ -16,14 +16,14 @@ $ sudo docker exec -i -t コンテナ名またはコンテナID bash
 ### ファイルの解凍と実行
 redmine コンテナ上で下記コマンドを実行します。  
 `
-    apt update &&
-    apt install -y unzip &&
-    cp /etc/redmine_agile-1_5_4-light.zip plugins/ &&
-    cd plugins &&
-    unzip redmine_agile-1_5_4-light.zip &&
-    cd .. &&
-    bundle install --without development test --no-deployment &&
-    bundle exec rake redmine:plugins NAME=redmine_agile RAILS_ENV=production
+apt update &&  
+apt install -y unzip &&  
+cp /etc/redmine_agile-1_5_4-light.zip plugins/ &&  
+cd plugins &&  
+unzip redmine_agile-1_5_4-light.zip &&  
+cd .. &&  
+bundle install --without development test --no-deployment &&  
+bundle exec rake redmine:plugins NAME=redmine_agile RAILS_ENV=production  
 `  
 
 ### 確認
