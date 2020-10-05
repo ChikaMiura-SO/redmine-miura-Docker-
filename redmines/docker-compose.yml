@@ -8,7 +8,7 @@ services:
     ports:
       - 80:3000
     environment:
-      REDMINE_DB_MYSQL: db
+      REDMINE_DB_MYSQL: mariadb
       REDMINE_DB_PASSWORD: RKtNCjnweZ7u9KwI
       REDMINE_SECRET_KEY_BASE: supersecretkey
     volumes:
