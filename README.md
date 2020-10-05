@@ -45,8 +45,9 @@ bundle exec rake redmine:plugins NAME=redmine_agile RAILS_ENV=production
 `  
 
 ### 確認
-Redmineにログインし、「管理」→ 「プラグイン」からAgileが反映されていることを確認します。  
+Redmineにログインし、「管理」→ 「プラグイン」からAgileが反映されていることを確認します。
 
+### 参考URL
 下記URLを参考にしました。  
 <https://qiita.com/ping-pong/items/78ae62e17219a3c1e26e>
 
