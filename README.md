@@ -1,7 +1,11 @@
 # redmine-miura-Docker-
 ## Redmine に Agile プラグイン( Light 版)を追加する方法  
 ### コンテナを起動  
+<<<<<<< HEAD
 コンテナ「redmine-miura-Docker-」を起動します。
+=======
+コンテナ「redmine-miura-Docker-を起動します。
+>>>>>>> master
 
 ### コンテナにプラグインファイルのコピー
 1.コンテナ内のdocker-compose.ymlの親ディレクトリに、ローカル環境で配置したredmine_agile-1_5_4-light.zipをコピーします。  
@@ -10,7 +14,7 @@ $ sudo docker cp redmine_agile-1_5_4-l <コンテナID>:/etc/redmine_agile-1_5_4
 `   
 2.コンテナの中に入ります。  
 `
-$ sudo docker exec -i -t コンテナ名またはコンテナID bash
+$ sudo docker exec -i -t コンテナ名またはコンテナID /bin/bash
 `   
 
 ### ファイルの解凍と実行
